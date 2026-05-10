@@ -59,7 +59,7 @@ Fase 3: Interfaz (App FFod)
 [ ] Notificaciones de pago recibido.
 
 👥 Integrantes
-[Usuarios] - Hunter Valtherion / Bytyrrexx_ / ⏃ 𝕯𝖊𝖑𝖋𝖎𝖓𝕬𝖔𝖎 ⏃ / Foxsee / ...
+[Usuarios] - Hunter Valtherion / Bytyrrexx_ / ⏃ 𝕯𝖊𝖑𝖋𝖎𝖓𝕬𝖔𝖎 ⏃ / Foxsee / Buru Buru ブルブル
 
 [Colaboradores] - Gameplay -- 
 
