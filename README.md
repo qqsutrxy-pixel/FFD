@@ -1,7 +1,3 @@
-¡Excelente idea! Un README.md bien estructurado no solo ayuda a tus compañeros a entender cómo trabajar, sino que le da una imagen profesional al repositorio de Fast Food Simulator.
-
-Aquí tienes una propuesta de contenido diseñada específicamente para un proyecto de UE 5.1. Puedes copiar y pegar esto en tu archivo README.md:
-
 🛵 Fast Food Simulator (Codename: FFod)
 Fast Food Simulator es un simulador de repartos desarrollado en Unreal Engine 5.1. El jugador asume el rol de un repartidor independiente que debe gestionar sus pedidos, su economía física/digital y el mantenimiento de su equipo a través de la app FFod.
 
