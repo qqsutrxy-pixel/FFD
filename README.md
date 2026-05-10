@@ -59,9 +59,9 @@ Fase 3: Interfaz (App FFod)
 [ ] Notificaciones de pago recibido.
 
 👥 Integrantes
-[Tu Nombre/Usuario] - Líder de Proyecto / Sistemas
+[Usuarios] - Hunter Valtherion / Bytyrrexx_ / ⏃ 𝕯𝖊𝖑𝖋𝖎𝖓𝕬𝖔𝖎 ⏃ / Foxsee / ...
 
-[Nombre de tu compañero] - Programador / Gameplay
+[Colaboradores] - Gameplay -- 
 
 💡 Nota sobre Copyright
 El nombre "Fast Food Simulator" y la app "FFod" son nombres en clave provisionales para evitar infracciones de propiedad intelectual relacionadas con marcas de delivery reales.
