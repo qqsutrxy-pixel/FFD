@@ -1,62 +1,71 @@
-**Fase 1: Infraestructura Técnica (Base del Equipo)**
-Este es el "paso 0" para que nadie pierda trabajo al usar GitHub.
+¡Excelente idea! Un README.md bien estructurado no solo ayuda a tus compañeros a entender cómo trabajar, sino que le da una imagen profesional al repositorio de Fast Food Simulator.
 
-[ ] Configurar Git LFS: Activar el rastreo de archivos pesados (.uasset, .umap).
+Aquí tienes una propuesta de contenido diseñada específicamente para un proyecto de UE 5.1. Puedes copiar y pegar esto en tu archivo README.md:
 
-[ ] Establecer el .gitignore: Bloquear carpetas temporales (Intermediate, Saved).
+🛵 Fast Food Simulator (Codename: FFod)
+Fast Food Simulator es un simulador de repartos desarrollado en Unreal Engine 5.1. El jugador asume el rol de un repartidor independiente que debe gestionar sus pedidos, su economía física/digital y el mantenimiento de su equipo a través de la app FFod.
 
-[ ] Estructura de Carpetas: Crear carpetas estándar: /Content/FastFoodSim/Blueprints/Core y /UI.
+🚀 Estado del Proyecto: Fase de Cimentación
+Actualmente, el equipo está trabajando en el núcleo del sistema económico y la integración de la infraestructura en GitHub.
 
-[ ] Definir la moneda: Decidir si usarán números enteros (Céntimos: 1050) o decimales (Floats: 10.50). Recomendación: Usar Floats para facilidad.**
+💰 Sistema de Economía (Propuesta Técnica)
+El juego utiliza un sistema de flujo de caja dual inspirado en simuladores de gestión inmersiva:
 
-**Fase 2: El Cerebro Económico (Lógica)**
-Aquí es donde el código decide qué pasa con el dinero.
+1. Tipos de Fondos
+Cartera Física (Cash): Dinero recibido por pedidos en efectivo. Se usa para gastos rápidos y depósitos en cajeros.
 
-[ ] Crear S_OrderData (Struct): Definir qué información lleva un pedido (ID, Nombre, CostoComida, PagoCliente, MetodoPago).
+Banca Digital (FFod App): Dinero recibido por tarjetas o transferencias. Es el saldo disponible para retiros y pagos oficiales de la app.
 
-[ ] Crear BPC_EconomyManager (Actor Component):
+2. Lógica de Transacción
+Para cada pedido, se calcula el beneficio real restando el costo del producto:
 
-[ ] Variable CashWallet (Efectivo).
+Fórmula: Ganancia Neta = (Precio Cliente + Propina) - Costo de Comida
 
-[ ] Variable BankBalance (App FFod).
+Al final de cada jornada laboral, el sistema genera un Resumen de Liquidación para mostrar la rentabilidad del jugador.
 
-[ ] Función AddTransaction: Que reciba el monto y el tipo (Cash/Bank) y actualice los saldos.
+🛠️ Guía para Colaboradores
+Requisitos Previos
+Unreal Engine 5.1.x instalado.
 
-[ ] Sistema de Liquidación de Deuda: Lógica para que al cobrar en efectivo, el sistema descuente el costo de la comida de la cuenta bancaria del jugador.
+Git LFS (Obligatorio). Antes de clonar, ejecuta:
 
-**Fase 3: La App FFod e Interacción (Mecánicas)**
-Hacer que el sistema se sienta como "Schedule 1".
+Bash
+git lfs install
+Visual Studio 2022 (con soporte para C++ de Unreal).
 
-[ ] Interface de Interacción (BPI_Interactable): Para que el jugador pueda tocar cajeros o terminales de pago.
+Flujo de Trabajo
+Ramas (Branches): No trabajes directamente en main. Crea una rama con tu nombre o tarea: feature/sistema-dinero.
 
-[ ] Lógica de Cajero (ATM):
+Blueprints: Antes de editar un Blueprint importante, avisa por el canal de comunicación para evitar conflictos de mezcla (Merge Conflicts).
 
-[ ] Función DepositCash.
+Source Control: Activa el "Source Control" dentro del editor de Unreal para ver quién tiene bloqueado cada archivo.
 
-[ ] Función WithdrawCash.
+📝 Lista de Tareas (Roadmap)
+Fase 1: Core & GitHub
+[x] Configuración de Repositorio y Colaboradores.
 
-[ ] Generador de Pedidos: Un sistema simple que cree pedidos aleatorios basados en el S_OrderData y los envíe a la App.
+[ ] Creación de .gitignore y Git LFS.
 
-**Fase 4: Interfaz de Usuario (UI)**
-Lo que el jugador ve en su teléfono.
+[ ] Estructura de carpetas inicial (/Content/FFod/Core).
 
-[ ] Widget Base del Teléfono: Diseño de la pantalla principal.
+Fase 2: Lógica Económica
+[ ] Implementar Struct S_OrderData.
 
-[ ] Pantalla de Wallet: Visualización en tiempo real de CashWallet y BankBalance.
+[ ] Desarrollar BPC_EconomyManager (Componente de Actor).
 
-[ ] Notificación de Pago: Un mensaje visual cada vez que se completa un pedido ("+$15.00 recibidos").
+[ ] Sistema de interacción con ATMs (Cajeros).
 
-[ ] Resumen del Día: Pantalla que aparece al terminar el turno mostrando:
+Fase 3: Interfaz (App FFod)
+[ ] Diseño de Widget base para el teléfono.
 
-Ingresos Totales.
+[ ] Pantalla de gestión de finanzas.
 
-Costos de Comida.
+[ ] Notificaciones de pago recibido.
 
-Ganancia Neta.
+👥 Integrantes
+[Tu Nombre/Usuario] - Líder de Proyecto / Sistemas
 
-**Fase 5: Estabilidad y Pulido (Testing)**
-[ ] Protección contra Saldo Negativo: Evitar que el jugador retire más dinero del que tiene en el banco.
+[Nombre de tu compañero] - Programador / Gameplay
 
-[ ] Persistencia (Save System): Lograr que al cerrar el juego y volver a abrirlo, el dinero se mantenga.
-
-[ ] Debug Menu: Crear un comando de consola para sumarse dinero y probar la economía rápidamente.**
+💡 Nota sobre Copyright
+El nombre "Fast Food Simulator" y la app "FFod" son nombres en clave provisionales para evitar infracciones de propiedad intelectual relacionadas con marcas de delivery reales.
