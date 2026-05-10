@@ -1,4 +1,4 @@
-**Fase 1: Infraestructura Técnica (Base del Equipo)
+**Fase 1: Infraestructura Técnica (Base del Equipo)**
 Este es el "paso 0" para que nadie pierda trabajo al usar GitHub.
 
 [ ] Configurar Git LFS: Activar el rastreo de archivos pesados (.uasset, .umap).
@@ -7,9 +7,9 @@ Este es el "paso 0" para que nadie pierda trabajo al usar GitHub.
 
 [ ] Estructura de Carpetas: Crear carpetas estándar: /Content/FastFoodSim/Blueprints/Core y /UI.
 
-[ ] Definir la moneda: Decidir si usarán números enteros (Céntimos: 1050) o decimales (Floats: 10.50). Recomendación: Usar Floats para facilidad.
+[ ] Definir la moneda: Decidir si usarán números enteros (Céntimos: 1050) o decimales (Floats: 10.50). Recomendación: Usar Floats para facilidad.**
 
-Fase 2: El Cerebro Económico (Lógica)
+**Fase 2: El Cerebro Económico (Lógica)**
 Aquí es donde el código decide qué pasa con el dinero.
 
 [ ] Crear S_OrderData (Struct): Definir qué información lleva un pedido (ID, Nombre, CostoComida, PagoCliente, MetodoPago).
@@ -24,7 +24,7 @@ Aquí es donde el código decide qué pasa con el dinero.
 
 [ ] Sistema de Liquidación de Deuda: Lógica para que al cobrar en efectivo, el sistema descuente el costo de la comida de la cuenta bancaria del jugador.
 
-Fase 3: La App FFod e Interacción (Mecánicas)
+**Fase 3: La App FFod e Interacción (Mecánicas)**
 Hacer que el sistema se sienta como "Schedule 1".
 
 [ ] Interface de Interacción (BPI_Interactable): Para que el jugador pueda tocar cajeros o terminales de pago.
@@ -37,7 +37,7 @@ Hacer que el sistema se sienta como "Schedule 1".
 
 [ ] Generador de Pedidos: Un sistema simple que cree pedidos aleatorios basados en el S_OrderData y los envíe a la App.
 
-Fase 4: Interfaz de Usuario (UI)
+**Fase 4: Interfaz de Usuario (UI)**
 Lo que el jugador ve en su teléfono.
 
 [ ] Widget Base del Teléfono: Diseño de la pantalla principal.
@@ -54,7 +54,7 @@ Costos de Comida.
 
 Ganancia Neta.
 
-Fase 5: Estabilidad y Pulido (Testing)
+**Fase 5: Estabilidad y Pulido (Testing)**
 [ ] Protección contra Saldo Negativo: Evitar que el jugador retire más dinero del que tiene en el banco.
 
 [ ] Persistencia (Save System): Lograr que al cerrar el juego y volver a abrirlo, el dinero se mantenga.
