@@ -1,6 +1,3 @@
-# FFD
-repo para FFD
-a
 **Fase 1: Infraestructura Técnica (Base del Equipo)
 Este es el "paso 0" para que nadie pierda trabajo al usar GitHub.
 
